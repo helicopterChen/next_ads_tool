@@ -29,6 +29,7 @@ let fs = {
         }
     },
     writeFile:function(sFileName,sFileData,pCallback){
+        console.log("writeFile "+sFileName)
         global.FILE[sFileName]=sFileData;
         if(pCallback){
             pCallback();
